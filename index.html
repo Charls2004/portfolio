@@ -805,7 +805,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 10px;
-            margin-bottom: 24px;
+            margin-bottom: 0;
         }
 
         .project-features li {
@@ -832,23 +832,17 @@
             flex-shrink: 0;
         }
 
-        .project-buttons {
-            display: flex;
-            gap: 14px;
-            flex-wrap: wrap;
-        }
-
         .project-mockup {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 30px 24px;
+            padding: 24px;
             background: rgba(255, 255, 255, 0.03);
             border-radius: var(--radius-sm);
             border: 1px solid var(--border-glass);
-            min-height: 200px;
+            min-height: 180px;
             transition: var(--transition);
         }
 
@@ -874,18 +868,6 @@
             color: var(--text-muted);
             margin-top: 10px;
             letter-spacing: 0.5px;
-        }
-
-        .project-mockup .emoji-big {
-            font-size: 4rem;
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        .project-mockup .app-label {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--text-secondary);
         }
 
         /* ----- CERTIFICATIONS ----- */
@@ -1251,7 +1233,7 @@
                         <div class="ring"></div>
                         <div class="ring"></div>
                         <div class="avatar-inner">
-                            <img src="prof.png" alt="Charls M. Canillo" />
+                            <img src="prof.jpg" alt="Charls M. Canillo" />
                         </div>
                     </div>
                 </div>
@@ -1416,7 +1398,7 @@
         </div>
     </section>
 
-    <!-- ===== PROJECTS SECTION ===== -->
+    <!-- ===== PROJECTS SECTION (BUTTONS REMOVED) ===== -->
     <section class="projects-section" id="projects">
         <div class="container">
             <span class="section-label">Portfolio</span>
@@ -1426,7 +1408,7 @@
             </p>
 
             <div class="projects-wrapper">
-                <!-- PROJECT 1: Byte Four -->
+                <!-- PROJECT 1: Byte Four (skill.png) -->
                 <div class="project-item">
                     <div class="project-info">
                         <div class="project-name">✦ Web Platform</div>
@@ -1442,15 +1424,10 @@
                             <li><span class="check">✓</span> Secure booking & payments</li>
                             <li><span class="check">✓</span> Trusted ratings & reviews</li>
                         </ul>
-                        <div class="project-buttons">
-                            <a href="#" class="btn btn-primary">View Project</a>
-                            <a href="#" class="btn btn-secondary">Live Demo</a>
-                        </div>
                     </div>
                     <div class="project-mockup">
-                        <span class="emoji-big">📱</span>
-                        <div class="app-label">Byte Four</div>
-                        <span style="font-size: 0.8rem; color: var(--text-muted);">Skill sharing app mockup</span>
+                        <img src="skill.png" alt="Byte Four - Skill sharing platform" class="mockup-img" />
+                        <span class="mockup-label">Byte Four · Skill sharing platform</span>
                     </div>
                 </div>
 
@@ -1470,10 +1447,6 @@
                             <li><span class="check">✓</span> Secure role-based access</li>
                             <li><span class="check">✓</span> Fleet monitoring & analytics</li>
                         </ul>
-                        <div class="project-buttons">
-                            <a href="#" class="btn btn-primary">View Project</a>
-                            <a href="#" class="btn btn-secondary">Live Demo</a>
-                        </div>
                     </div>
                     <div class="project-mockup">
                         <img src="imonitor.png" alt="Fleet Operations Dashboard" class="mockup-img" />
